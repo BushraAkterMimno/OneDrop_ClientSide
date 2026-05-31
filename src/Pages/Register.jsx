@@ -66,7 +66,7 @@ const Register = () => {
         await registerUser(name, email, password, mainPhotoURL);
 
         const userInfo = { name, email, bloodGroup, district: districtName, upazila: upazilaName, photoURL: mainPhotoURL, status: 'active' };
-        await axios.post('http://localhost:5000/users', userInfo);
+        await axios.post('https://onedrop-server-side.onrender.com/users', userInfo);
         
         alert("Registration Successful!");
         navigate("/");

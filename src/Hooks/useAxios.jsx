@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Base axios instance
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000", 
+  baseURL: "https://onedrop-server-side.onrender.com", 
 });
 
 // Custom hook

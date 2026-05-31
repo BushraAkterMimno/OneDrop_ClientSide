@@ -13,7 +13,7 @@ const Funding = () => {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/create-payment-checkout",
+        "https://onedrop-server-side.onrender.com/create-payment-checkout",
         {
           amount,
           donorName: user?.displayName || "Anonymous",
