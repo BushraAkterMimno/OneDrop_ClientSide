@@ -7,7 +7,7 @@ import Error from "../Pages/Error";
 import About from "../Pages/About";
 import Emergency from "../Pages/Emergency";
 import Contact from "../Pages/Contact";
-import Profile from "../Pages/profile";
+import Profile from "../Pages/Profile";
 import Search from "../Pages/Search";
 import Funding from "../Pages/Dashboard/Funding";
 import DashboardLayout from "../DashboardLayout/DashboardLayout";
