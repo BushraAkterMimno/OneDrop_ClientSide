@@ -3,7 +3,7 @@ import axios from "axios";
 import { AuthContext } from "../Providers/AuthProvider";
 
 const axiosSecure = axios.create({
-  baseURL: "https://onedrop-server-side.onrender.com",
+  baseURL: "https://onedrop-serverside-1.onrender.com",
 });
 
 const useAxiosSecure = () => {

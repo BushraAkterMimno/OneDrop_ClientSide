@@ -21,7 +21,7 @@ const Login = () => {
     const { email, password } = e.target;
     try {
       const res = await axios.get(
-  `https://onedrop-server-side.onrender.com/users/${email.value}`
+  `https://onedrop-serverside-1.onrender.com/users/${email.value}`
 );
 
 loginUser(res.data);

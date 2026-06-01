@@ -14,7 +14,7 @@ const Search = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        `https://onedrop-server-side.onrender.com/users?bloodGroup=${bloodGroup}&district=${district}&upazila=${upazila}`
+        `https://onedrop-serverside-1.onrender.com/users?bloodGroup=${bloodGroup}&district=${district}&upazila=${upazila}`
       );
       const data = await res.json();
       setDonors(data);

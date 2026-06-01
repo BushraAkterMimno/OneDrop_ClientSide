@@ -19,12 +19,12 @@ const MyRequest = () => {
 
         // ADMIN → all requests
         if (user?.role === "admin") {
-          url = "https://onedrop-server-side.onrender.com/requests";
+          url = "https://onedrop-serverside-1.onrender.com/requests";
         }
 
         // USER → own requests
         else {
-          url = `https://onedrop-server-side.onrender.com/my-requests/${user.email}`;
+          url = `https://onedrop-serverside-1.onrender.com/my-requests/${user.email}`;
         }
 
         const res = await axios.get(url);

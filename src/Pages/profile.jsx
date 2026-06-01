@@ -20,7 +20,7 @@ const Profile = () => {
     }
 
     axios
-      .get(`https://onedrop-server-side.onrender.com/users/${user.email}`)
+      .get(`https://onedrop-serverside-1.onrender.com/users/${user.email}`)
       .then((res) => {
         setUserData(res.data);
       })
@@ -47,7 +47,7 @@ const Profile = () => {
 
     try {
       await axios.put(
-        `https://onedrop-server-side.onrender.com/users/${user.email}`,
+        `https://onedrop-serverside-1.onrender.com/users/${user.email}`,
         updatedUser
       );
 

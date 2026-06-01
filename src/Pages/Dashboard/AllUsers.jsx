@@ -15,7 +15,7 @@ const AllUsers = () => {
       try {
         setLoading(true);
 
-        const res = await axios.get("https://onedrop-server-side.onrender.com/users");
+        const res = await axios.get("https://onedrop-serverside-1.onrender.com/users");
 
         console.log("API RESPONSE:", res.data); // 🔥 DEBUG
 
@@ -39,7 +39,7 @@ const AllUsers = () => {
   // ========== ACTIONS ==========
   const handleBlock = async (id) => {
     try {
-      await axios.patch(`https://onedrop-server-side.onrender.com/users/block/${id}`);
+      await axios.patch(`https://onedrop-serverside-1.onrender.com/users/block/${id}`);
 
       setUsers(prev =>
         prev.map(u =>
@@ -53,7 +53,7 @@ const AllUsers = () => {
 
   const handleUnblock = async (id) => {
     try {
-      await axios.patch(`https://onedrop-server-side.onrender.com/users/unblock/${id}`);
+      await axios.patch(`https://onedrop-serverside-1.onrender.com/users/unblock/${id}`);
 
       setUsers(prev =>
         prev.map(u =>
@@ -68,7 +68,7 @@ const AllUsers = () => {
   const handleRoleChange = async (id, role) => {
     try {
       await axios.patch(
-        `https://onedrop-server-side.onrender.com/users/role/${id}`,
+        `https://onedrop-serverside-1.onrender.com/users/role/${id}`,
         { role }
       );
 
