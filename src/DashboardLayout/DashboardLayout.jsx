@@ -2,7 +2,7 @@ import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { FaUser, FaHome, FaPlus, FaList, FaUsers } from "react-icons/fa";
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/logo.png";
 
 const DashboardLayout = () => {
   const { logoutUser } = useContext(AuthContext);
