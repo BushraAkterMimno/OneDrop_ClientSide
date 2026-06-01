@@ -126,7 +126,7 @@ const AllUsers = () => {
                 <th className="border p-2">Email</th>
                 <th className="border p-2">Role</th>
                 <th className="border p-2">Status</th>
-                <th className="border p-2">Actions</th>
+                {/* <th className="border p-2">Actions</th> */}
               </tr>
             </thead>
 
@@ -151,18 +151,18 @@ const AllUsers = () => {
                       />
                     </td>
 
-                    <td className="border p-2">{user.name}</td>
-                    <td className="border p-2 break-words">
+                    <td className="border text-center p-2">{user.name}</td>
+                    <td className="border text-center p-2 break-words">
                       {user.email}
                     </td>
-                    <td className="border p-2">
+                    <td className="border text-center p-2">
                       {user.role || "user"}
                     </td>
-                    <td className="border p-2">
+                    <td className="border text-center p-2">
                       {user.status || "active"}
                     </td>
 
-                    <td className="border p-2 flex gap-2 justify-center flex-wrap">
+                    {/* <td className="border p-2 flex gap-2 justify-center flex-wrap">
                       {user.status === "active" ? (
                         <button
                           onClick={() => handleBlock(user._id)}
@@ -192,7 +192,7 @@ const AllUsers = () => {
                       >
                         Admin
                       </button>
-                    </td>
+                    </td> */}
                   </tr>
                 ))
               )}

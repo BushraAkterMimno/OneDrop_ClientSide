@@ -14,7 +14,7 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
               Donate Blood,
               <br />
-              Save Lives ❤️
+              Save Lives
             </h1>
 
             <p className="py-6 text-lg md:text-xl text-red-100">
